@@ -1,0 +1,29 @@
+{
+  "name": "log-book",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "logbook": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "@planetabhi",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetabhi/log-book.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planetabhi/log-book/issues"
+  },
+  "homepage": "https://github.com/planetabhi/log-book#readme"
+}
