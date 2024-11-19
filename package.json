@@ -1,5 +1,5 @@
 {
-  "name": "log-book",
+  "name": "parchi",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planetabhi/log-book.git"
+    "url": "git+https://github.com/planetabhi/parchi.git"
   },
   "bugs": {
-    "url": "https://github.com/planetabhi/log-book/issues"
+    "url": "https://github.com/planetabhi/parchi/issues"
   },
-  "homepage": "https://github.com/planetabhi/log-book#readme"
+  "homepage": "https://github.com/planetabhi/parchi#readme"
 }

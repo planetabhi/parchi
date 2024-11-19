@@ -8,12 +8,12 @@ const { program } = require('commander');
 
 // Default configuration
 const CONFIG = {
-  logDirName: process.env.LOGBOOK_LOGDIR_NAME || '.logbook',
-  defaultLogDir: process.env.LOGBOOK_DEFAULT_LOGDIR || path.join(os.homedir(), '.logbook'),
-  logFilePattern: process.env.LOGBOOK_LOGFILE_PATTERN || '%Y-%m-%d.md',
-  editCmd: process.env.LOGBOOK_EDIT_CMD || getDefaultEditor(),
-  readCmd: process.env.LOGBOOK_READ_CMD || getDefaultReader(),
-  grepCmd: process.env.LOGBOOK_GREP_CMD || 'grep -i -R -F --color'
+  logDirName: process.env.PARCHI_LOGDIR_NAME || '.parchi',
+  defaultLogDir: process.env.PARCHI_DEFAULT_LOGDIR || path.join(os.homedir(), '.parchi'),
+  logFilePattern: process.env.PARCHI_LOGFILE_PATTERN || '%Y-%m-%d.md',
+  editCmd: process.env.PARCHI_EDIT_CMD || getDefaultEditor(),
+  readCmd: process.env.PARCHI_READ_CMD || getDefaultReader(),
+  grepCmd: process.env.PARCHI_GREP_CMD || 'grep -i -R -F --color'
 };
 
 function getDefaultEditor() {
@@ -128,8 +128,8 @@ async function searchEntries(pattern, options) {
 
 // CLI setup
 program
-  .name('logbook')
-  .description('Simple journaling for lazy humans')
+  .name('parchi')
+  .description('Simple note-taking for lazy humans')
   .version('1.0.0');
 
 program
