@@ -1,6 +1,7 @@
 {
   "name": "parchi",
-  "version": "0.0.0",
+  "version": "1.47.0",
+  "rhyver": "v1.24Q4.47.0-alpha.1",
   "description": "",
   "main": "index.js",
   "bin": {
