@@ -6,7 +6,7 @@ const os = require('os');
 const { execSync } = require('child_process');
 const { program } = require('commander');
 
-// Default configuration
+// Default config
 const CONFIG = {
   logDirName: process.env.PARCHI_LOGDIR_NAME || '.parchi',
   defaultLogDir: process.env.PARCHI_DEFAULT_LOGDIR || path.join(os.homedir(), '.parchi'),
@@ -19,7 +19,18 @@ const CONFIG = {
 function getDefaultEditor() {
   if (process.env.EDITOR) return process.env.EDITOR;
   
-  const editors = ['nano', 'vim', 'vi'];
+  const editors = [
+    'code',
+    'cursor',
+    'subl',
+    'atom',
+    'nano',
+    'vim',
+    'vi',
+    'gedit',
+    'notepad',
+    'emacs'
+  ];
   for (const editor of editors) {
     try {
       execSync(`which ${editor}`, { stdio: 'ignore' });
@@ -130,7 +141,7 @@ async function searchEntries(pattern, options) {
 program
   .name('parchi')
   .description('Simple note-taking for lazy humans')
-  .version('1.0.0');
+  .version('1.47.1');
 
 program
   .command('edit [entry]')

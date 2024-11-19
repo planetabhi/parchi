@@ -1,16 +1,23 @@
 {
   "name": "parchi",
-  "version": "1.47.0",
-  "rhyver": "v1.24Q4.47.0-alpha.1",
+  "version": "1.47.1",
+  "rhyver": "v1.24Q4.47.1-alpha.1",
   "description": "",
   "main": "index.js",
   "bin": {
-    "logbook": "./index.js"
+    "parchi": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "notes",
+    "parchi",
+    "diary",
+    "logging",
+    "productivity"
+  ],
   "author": "@planetabhi",
   "license": "MIT",
   "dependencies": {
